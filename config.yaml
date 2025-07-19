@@ -1,0 +1,50 @@
+contacts:
+  personal:
+    - name: "John Doe"
+      phone: "+1234567890"
+      messages:
+        - type: "text"
+          content: "Good morning! Have a great day! 🌅"
+          time: "09:00"
+        - type: "text"
+          content: "Good night! Sweet dreams! 🌙"
+          time: "22:00"
+    
+    - name: "Jane Smith"
+      phone: "+0987654321"
+      messages:
+        - type: "text"
+          content: "Daily reminder: Stay hydrated! 💧"
+          time: "14:00"
+        - type: "image"
+          image_path: "images/motivational_quote.jpg"
+          caption: "Your daily motivation! 💪"
+          time: "08:00"
+
+  groups:
+    - name: "Family Group"
+      messages:
+        - type: "text"
+          content: "Good morning family! Hope everyone has a wonderful day! ❤️"
+          time: "08:30"
+        - type: "text"
+          content: "Don't forget our weekend plans! 📅"
+          time: "18:00"
+    
+    - name: "Work Team"
+      messages:
+        - type: "text"
+          content: "Daily standup reminder in 30 minutes! 📊"
+          time: "09:30"
+        - type: "image"
+          image_path: "images/team_motivation.jpg"
+          caption: "Let's crush today's goals! 🚀"
+          time: "09:00"
+
+settings:
+  wait_time: 20  # seconds to wait after opening WhatsApp
+  close_tab: true  # close tab after sending message
+  image_formats: [".jpg", ".jpeg", ".png", ".gif", ".webp"]
+  timezone: "local"
+  retry_attempts: 3
+  retry_delay: 5  # seconds between retries
